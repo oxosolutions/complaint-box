@@ -1,0 +1,8 @@
+{
+  "name": "compaints",
+  "app_id": "188c8d69",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}

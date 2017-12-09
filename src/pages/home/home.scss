@@ -1,0 +1,16 @@
+page-home {
+	.scroll-content{
+		padding:0px !important;
+	}
+	.error-message{
+		color: red;
+		font-size: 12px
+	}	
+	ion-select{
+		width:100% !important;
+		max-width: 100% !important
+	}
+	.alert-md .alert-tappable{
+		min-height:0px
+	}
+}

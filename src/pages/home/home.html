@@ -1,0 +1,132 @@
+<!-- <ion-header>
+  <ion-navbar>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+ -->
+<ion-content padding>
+  
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+<section>
+    <div class="ar p-28" style="background: url('https://www.xmple.com/wallpaper/purple-blue-gradient-linear-1920x1080-c2-9370db-00bfff-a-150-f-14.svg');">
+        <div class="">
+            <div class="ac s100 m100 l30">
+           
+            </div>
+            
+        <div class="ac s100 m100 l40 bg-grey bg-lighten-4 p-20">
+             <h4 class="aione-align-center">Complaint Box</h4>
+             <p class="aione-align-center">For Customer By Customer</p>
+            
+             
+                <div id="field_3081" data-conditions="0" data-field-type="text" class="field-wrapper ac field-wrapper-text_field field-wrapper-type-text ">
+                    <div id="field_label_text_field" class="field-label">
+
+                        <label for="input_text_field">
+                            <h4 class="field-title" id="Text Field" >Name</h4>
+                        </label>    
+
+                    </div><!-- field label-->
+
+
+                    <div id="field_text_field" class="field field-type-text">
+
+                        <input class="input-text_field" id="input_text_field" name="name" [(ngModel)]="name" placeholder="" data-validation="" name="text_field" type="text"> 
+
+                    </div><!-- field -->
+                    <span class="error-message"> {{ nameError}} </span>
+                </div>
+                <div id="field_3082" data-conditions="0" data-field-type="number" class="field-wrapper ac field-wrapper-number_field field-wrapper-type-number">
+                    <div id="field_label_number_field" class="field-label">
+
+                        <label for="input_number_field">
+                            <h4 class="field-title" id="Number Field" >Mobile No.</h4>
+                        </label>
+
+                    </div><!-- field label-->
+
+
+                    <div id="field_number_field" class="field field-type-number">
+
+                        <input class="number_field l50 m50 s100" name="mobile" [(ngModel)]="mobile" id="input_number_field" placeholder="" data-validation="" name="number_field" type="number">
+
+                    </div><!-- field -->
+                    <span class="error-message"> {{ mobileError}} </span>
+
+                </div> 
+           
+            <div id="field_3082" data-conditions="0" data-field-type="number" class="field-wrapper ac field-wrapper-number_field field-wrapper-type-number ">
+                    <div id="field_label_number_field" class="field-label">
+
+                        <label for="input_number_field">
+                            <h4 class="field-title" id="Number Field" >Department</h4>
+                        </label>
+
+                    </div>
+                    <!-- field label-->
+                    <!--  <div id="field_number_field" class="field field-type-number">
+                          
+
+                         <ion-item>
+                         
+                          <ion-select name="department" [(ngModel)]="department">
+                            <ion-option *ngFor= "let options of option">{{options}}</ion-option>
+                          </ion-select>
+                        </ion-item>
+
+                    </div> -->
+
+                    <ion-item>
+                      <ion-select [(ngModel)]="department">
+                        <ion-option *ngFor= "let options of option" value="{{ options }}">{{options}}</ion-option>
+                      </ion-select>
+                    </ion-item>
+                   
+                    <span class="error-message"> {{ departmentError}} </span>
+
+                    <!-- field -->
+                </div> 
+                 <div id="field_1709" data-conditions="0" data-field-type="textarea" class="field-wrapper ac field-wrapper-message field-wrapper-type-textarea ">
+                        <div id="field_label_message" class="field-label">
+                            <label for="input_message">
+                                <h4 class="field-title" id="Message">
+                                    Message
+                                </h4>
+                            </label>
+                        </div>
+                        <!-- field label-->
+                        <div id="field_message" class="field field-type-textarea" >
+                            <textarea class="message" id="input_message" rows="3" cols="100" name="message" name="message"
+                             [(ngModel)]="message"></textarea>
+                        </div>
+                    <span class="error-message"> {{ messageError}} </span>
+
+                        <!-- field -->
+                    </div> 
+                    <div class="aione-align-center">
+                        <button class="aione-button-medium bg-blue mt-20" style="width:100%;" (click)="formSubmit(name,mobile,department,message,org_id)">Submit</button>
+                    </div>
+           </div>
+           <div class="ac s100 m100 l10">
+               
+           </div>
+        </div>
+    </div>
+    
+</section>
+<!-- <style>
+    .aione-header .aione-header-item > img{
+        display:none;
+    }
+</style>
+<script>
+   $(document).ready(function() {
+    $('.select-2').select2();
+}); 
+</script> -->
+ <!--  <div>
+   
+  
+  --> 
+</ion-content>
