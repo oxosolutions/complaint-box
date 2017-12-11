@@ -66,7 +66,7 @@ export class HomePage {
     });
     loader.present();
     let toast=this.toastctrl.create({
-      message:'your form is submitted',
+      message:'Your Complaint is Submitted',
       duration:4000,
       position:'top',
     });
